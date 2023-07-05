@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Module 3: Git & Github (basic)</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <header class="container">
+    <h1 class="main-heading">Module: 3: Git & Github (basic)</h1>
+    <p class="subheading">Welcome to the Programming Hero Classes repository! This repository serves as a central hub for all the notes and resources related to the Programming Hero classes.</p>
+  </header>
+  <main class="container">
+    <article class="main-content">
+      <p class="content-heading">Class notes:</p>
+
+      <!-- Start adding text from here. -->
+
+      <section>
+        <h4>Git কি, Git কিভাবে কাজ করে?</h4>
+        <p>Git হলো একটি ফ্রি এবং ওপেন সোর্স version control system যার মাধ্যমে আমাদের কোন কোড বা কাজ কে একটা জায়গায় রাখতে পারি, প্রয়োজনে আগের কোন কোড দেখতে পারি, কোড মুছে দিতে পারি ইত্যাদি। আরেকটু ক্লিয়ার করে বলা যাক। মনে করুন, আপনি আজকে ১টি কোড লিখলেন এবং কালকেও ১টি কোড লিখলনে। ৩ দিন পরে এসে আপনার মনে হলে যে, না আমার ঐ প্রথম দিনের কোডটি দরকার। সাধারনত ভাবে আপনি কি পারবেন বের করতে যে প্রথম কি কাজ করছিলনে ঐ একই ফাইলে? না পারবনে না। কিন্তু আমরা যদি Git ব্যবহার করি তাহলে সহজেই যে কোন দিনের যে কোন কোড আমরা সহজেই বের করতে পারব। মানে আমাদের সকল কোডগুলোকে Version Control System করার একটি টুলই হচ্ছে এই git.</p>
+      </section>
+
+      <section>
+        <h4>কেন Git ব্যবহার করা প্রয়োজন?</h4>
+        <p>সাধারনত বড় কোন project এর জন্য আমরা অনেক developer একসাথে কাজ করি এবং প্রত্যেকের আলাদ আলাদ কাজও দেওয়া থাকে। এখন একই project এ অনেকগুলো developer কাজ করার ফলে project যাতে কোন conflicts না হয় মানে এক জনের কোড আরেক জনের সাথে যাতে মিশে না যায় তার জন্য আমরা Git ব্যবহার করে থাকি। মানে একেক জন তার নিজের কাজের জন্য আলাদ Branch করে কাজ করবে যার কারনে conflict টা হবে না। Branch নিয়ে নিচে আলোচনা করব আমরা।
+        তাছাড়ও একটা project এর requirements প্রায়ই পরিবর্তন হয়ে থাকে। যেমন projects এর শুরুতে এই requirements ছিল আবার ৭ দিন পর অন্য এক requirements আবার পরে আরেক requirements কিন্তু আমরা ঠিকই প্রত্যেকটি requirements এর জন্য কোড লিখেছি। Git ব্যবহার করলে আমরা সহজেই আগের কোন কোডে ফিরে যেতে পারি। আবার আমরা একই সাথে অনকেগুলো project এর কাজ করে থাকি। এই ক্ষেত্রে Git খুব গুরুত্বপূর্ন ভূমিকা পালন করে থাকে প্রত্যেকেটি project এর Version Control এর জন্য।</p>
+      </section>
+
+      <section>
+        <h4>GitHub কি? </h4>
+        <p>গিটহাব ব্যাসিকালি হোস্টিং সার্ভিস। এটা গিট ভার্শন কন্ট্রোল সিস্টেমের জন্যে হোস্ট প্রোভাইড করে। আর সাথে কিছু ইউজার ইন্টারফেসও প্রোভাইড করে গিটের কাজগুলো করার জন্যে। এখন গিটহাবই একমাত্র হোস্ট প্রোভাইডার না এখানে, আরো যেমন বিটবাকেট, গিটল্যাবসহ আরো অনেক আছে। কিন্তু আমি এখানে গিটহাব হাইলাইট করেছি কারণ গিটহাবেই অনেক বড় বড় ওপেন সোর্স অনেক প্রোজেক্ট রয়েছে। তবে বিটবাকেট, গিটল্যাবও ছোটো ছোটো টীমের জন্যে অনেক ইউজফুল।</p>
+        <p>আমাদের প্রোজেক্টে মাঝেমধ্যে একাধিক ডেভেলপার থাকে। বা টিমওয়ার্ক করলে একাধিক ডেভেলপাররা একই প্রোজেক্টের উপর কাজ করে। এখন আমরা চাইলে আমাদের প্রোজেক্টের ভার্শন কন্ট্রোল সিস্টেমসহ আমাদের বাকি টিমমেটদের সাথে শেয়ার করতে পারবো এইধরনের হোস্ট ইউজ করে, বা গিটহাব/বিটবাকেট/গিটল্যাব দিয়ে। আমার টিমমেটরাও আমার সেইম প্রোজেক্টটা পাবে, চাইলে আমার আগের ভার্শনগুলোও দেখতে পারবে, আবার চাইলে নিজেও নতুন আরেকটা ভার্শন অ্যাড করে আবার গিটহাবের মাধ্যমে শেয়ার করতে পারবে। আর আমি আবার গিটে কমান্ড দিয়ে সে ভার্শন আমার লোকাল ডিস্কে নিয়ে আসতে পারবো। এখন গিটহাবে প্রোজেক্ট এভাবে ওপেনও রাখা যায় আবার চাইলে প্রাইভেট প্রোজেক্টও রাখা যায়। গিটহাবে অনেক প্রোজেক্টের দেখবেন কয়েক হাজার ডেভেলপার কন্ট্রিবিউট করেছে একটা প্রোজেক্টে।</p>
+      </section>
+
+      <section>
+        <h4>Git Setup</h4>
+        <p>গিট ব্যবহার করার জন্য প্রথমে আপনাকে গিট ডাউনলোড করতে হবে <a href="https://git-scm.com/">এখান থেকে</a>।</p>
+        <p>তারপর install করা খুব সহজ। অন্যান্য সফটওয়ারের মত নেক্সট নেক্সট করে সেটআপ প্রসেস কমপ্লিট করে ফেলবেন। সেটাপ করা শেষ হলে একটা গিট ব্যাশ (Git Bash) অ্যাপ্লিকেশন পাবেন। এটা কমান্ড লাইন। এটা ওপেন করলে কমান্ড দেওয়ার উইন্ডো পাবেন, এখানে আপনি ইউনিক্স-লাইক অপারেটিং সিস্টেমের কমান্ড ইউজ করতে পারবেন। এজন্যে আপনার আগের কিছু লিনাক্স/ইউনিক্স এর কমান্ডের সাথে পরিচয় থাকলে ইজিলিই এখানে ইউজ করতে পারবেন। </p>
+        <p>আমাদের সেটআপ টিক আছে কিনা চেক করার জন্য নিচের কোডটি রান করতে হবে।</p>
+        <code>git --version</code>
+        <p>সবকিছু ঠিক থাকলে নিচে আউটপুটির মত একটি আউটপুট পব। আপনার ক্ষেত্রে version ভিন্ন হতে পারে।</p>
+        <code>git version 2.41.0.windows.1</code>
+      </section>
+
+      <section>
+        <h4>Git Configure:</h4>
+        <p>গিটের গ্লোবাল কিছু কনফিগারেশন করে নিতে হবে সবকিছু শুরু করার আগে। খুবই সিম্পল। জাস্ট আপনার কমান্ড লাইনটা ওপেন করে নিচের কমান্ডগুলো নিজের নাম এবং ইমেইল দিয়ে সেটাপ করে নিন। নিচের কমান্ডগুলো গিট এর গ্লোবাল কনফিগারেশন। অর্থাৎ আপনার সিসটেমে যত প্রজেক্টে গিট ইউজ করবেন তার সবগুলোতে ইউজারের নাম আর ইমেইল হিসাবে এগুলোই ইউজ করবে।</p>
+        <code>
+          git config --global user.name "imrulkaisar" <br>
+          git config --global user.email "imrulkaisar3@gmail.com"
+        </code>
+        <p><small><b>নোটঃ</b> এখানে অবশ্যই আপনার user name এবং email ব্যবহার করবেন।</small></p>
+      </section>
+      
+      <section>
+        <h4>নতুন গিট রিপোজিটরি সেটাপঃ</h4>
+        <p>প্রথমেই আমাদেরকে যেতে হবে এই এড্রেসে <a href="https://github.com">Github.com</a>। এটিই হলো GitHub এর অফিসিয়াল ওয়েবসাইট। GitHub এ যদি কোন অ্যাকাউন্ট করা না থাকে তাহলে আমরা নতুন একটি একাউন্ট করে নিব। এরপর লগইন করে একেবারে উপরের ডান দিকে আমরা একটি + (প্লাস) আইকন দেখতে পাব। এই + (প্লাস) আইকনে ক্লিক করলে নিচের ছবির মত একটি ড্রপডাউন মেনু দেখতে পাব।</p>
+        <p>
+          <img src="https://amarcourse.com/wp-content/uploads/2021/01/new-git-repository-1-1.png" alt="">
+        </p>
+        <p>এরপর New repository তে ক্লিক করলেই নতুন একটি পেজ দেখতে পাব যেখানে আমরা নতুন repository তৈরী করার জন্য বিভিন্ন ইনপুট ফিল্ড দেখতে পাব।</p>
+        <p><img src="https://amarcourse.com/wp-content/uploads/2021/01/git-new-repository-form-4-1024x504.png" alt=""></p>
+        <p>এপর Repository name ফিল্ডে অমরা যেকোন একটা নাম দিব এবং নিচে Create repository বাটনে ক্লিক করলেই নতুন ১ টি Remote Git Repository তৈরী হয়ে যাবে।
+          এখানে আরো কিছু অফশস রয়েছে যেমন – আমাদের এই Remote Git Repository কি public হবে নাকি private হবে। GitHub এ public Remote Git Repository তৈরী করতে কোন টাকা লাগে না কিন্তু যদি private Remote Git Repository তৈরী করতে চাই তাহলে আমাদেরকে কিছু টাকা খরচ করতে হবে।
+          এছাড়াও আমরা চাইলে README, .gitignore এবং license এই Remote Git Repository এর জন্য তৈরী করতে পারি। README হলো এই Repository এর কেন, কি জন্য, কি কি করা যাবে বা ডকুমেন্টশেন তার একটি বর্ননা। .gitignore হলো আমরা যখন কম্পিউটার থেকে Remote Git Repository তে ডাটাগুলো পাঠাবো তখন কোন কোন ফাইল বা ফোল্ডার আমরা পাঠাতে চাই না তার একটি লিস্ট এই .gitignore ফাইলে বলে দিতে পারব। তাতে করে ঐ ফাইল বা ফোল্ডারগুলো Remote Git Repository তে আর যাবে না।
+          এছড়ার license যদি থাকে তাও আমরা তৈরী করতে পারব।
+          এখন এ Create repository বাটনে ক্লিক করার সাথে সাথে amartest নামে ১টি Remote Git Repository তৈর হয়ে যাবে। এবং নিচের ছবির মত একটা পেজ দেখতে পাব।</p>
+          <p><img src="https://img001.prntscr.com/file/img001/IQo-i4PWRZahAo6BG5y64A.png" alt=""></p>
+          <p> মার্ক করা কোড গুলি এক এক করে রান করি।</p>
+          <code>
+            git init <br>
+            git add README.md <br>
+            git commit -m "first commit" <br>
+            git branch -M master <br>
+            git remote add origin https://github.com/imrulkaisar/css-grid.git <br> 
+            git push -u origin master 
+          </code>
+
+      </section>
+
+        
+      
+
+      <!-- Stop adding text here -->
+    </article>
+  </main>
+  <footer class="container">
+    <p>Created by Imrul Kaisar </p>
+    <p>If you have any questions, feedback, or need support related to the content in this repository, please feel free to contact me. I'll do our best to address your concerns and assist you promptly. <a href="mailto:imrulkaisar3@gmail.com">imrulkaisar3@gmail.com</a></p>
+    <p>Happy coding and enjoy your learning journey with Programming Hero!</p>
+  </footer>
+  
+</body>
+</html>
