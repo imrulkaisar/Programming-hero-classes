@@ -44,3 +44,8 @@ header {
   color: #acacac;
   padding-bottom: 30px;
 }
+
+footer {
+  font-size: 14px;
+  padding: 20px 0 30px;
+}
