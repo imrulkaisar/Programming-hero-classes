@@ -25,10 +25,22 @@ img {
   max-width: 1140px;
   margin: 0 auto;
 }
-
+.button, a.button {
+  padding: 10px 25px;
+  border: 1px solid #848484;
+  border-radius: 3px;
+  background-color: #ebebeb;
+  color: #333333;
+}
+.button:hover, a.button:hover {
+  border: 1px solid #222222;
+}
 header {
   border-bottom: 2px solid #dddddd;
   padding: 20px 0 10px;
+}
+.home {
+  float: right;
 }
 .main-heading {
   font-size: 32px;
